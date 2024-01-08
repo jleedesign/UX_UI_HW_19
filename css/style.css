@@ -29,6 +29,27 @@ div {
   text-align: center;
 }
 
+.title1 {
+  font-style: italic;
+  font-size: 20px;
+  margin: 150px 0px 0px;
+}
+
+.title2 {
+  font-family: Open Sans;
+  font-size: 40px;
+  width: 700px;
+  margin: 0px 400px;
+}
+
+.arrow-align {
+  margin: 50px 0px 150px;
+}
+
+img.arrow:hover {
+	transform: scale(1.15);
+}
+
 .heroImg {
   height: 600px;
   padding: 25px;
@@ -168,8 +189,29 @@ li {
   margin: 5px 20px 5px 30px;
 }
 
+div class img{
+  width: 400px;
+  height: 600px;
+  object-fit:cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+div class img:hover{
+  -webrit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 600px) {
   .workGrid {
+  display: flex;
   flex-direction: column;
   width: 100%;
   grid-template-rows: 300px;
